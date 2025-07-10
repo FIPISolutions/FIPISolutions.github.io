@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Organizer - Documentos</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            line-height: 1.6;
+        }
+        h1 { 
+            color: #0066cc; 
+            margin-top: 0;
+        }
+        a { 
+            color: #0066cc; 
+            text-decoration: none; 
+            font-weight: bold;
+        }
+        a:hover { 
+            text-decoration: underline; 
+        }
+        .doc-box { 
+            background: #f5f5f5; 
+            padding: 20px; 
+            margin: 15px 0; 
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+        .language-selector { 
+            margin: 0 0 25px 0; 
+            padding: 12px 15px; 
+            background: #eef7ff; 
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .file-actions {
+            margin-top: 10px;
+        }
+        .file-actions a {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #0066cc;
+            color: white !important;
+            border-radius: 4px;
+            margin-right: 8px;
+            font-size: 14px;
+        }
+        .file-actions a:hover {
+            background: #0052a3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <label for="language"><strong>Idioma/Language:</strong></label>
+        <select id="language" onchange="updateLinks()" style="padding: 5px; border-radius: 4px; border: 1px solid #ccc;">
+            <option value="pt-br">Português</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <h1 id="title">QR Organizer - Documentos</h1>
+    
+    <div class="doc-box">
+        <h2>📱 <span id="about-app-text">Sobre o Aplicativo</span></h2>
+        <p id="about-app-desc">Funcionalidades e benefícios:</p>
+        <div class="file-actions">
+            <a id="app-description-link" href="./pt-br/app-description.md" target="_blank">Ver Online</a>
+            <a id="app-description-download" href="./pt-br/app-description.md" download>Baixar</a>
+        </div>
+    </div>
+
+    <div class="doc-box">
+        <h2>🗑️ <span id="delete-account-text">Como Excluir Sua Conta</span></h2>
+        <p id="delete-account-desc">Passo a passo completo:</p>
+        <div class="file-actions">
+            <a id="delete-account-link" href="./pt-br/delete-account.md" target="_blank">Ver Online</a>
+            <a id="delete-account-download" href="./pt-br/delete-account.md" download>Baixar</a>
+        </div>
+    </div>
+
+    <div class="doc-box">
+        <h2>📝 <span id="terms-text">Termos de Uso</span></h2>
+        <p id="terms-desc">Regras de utilização do app:</p>
+        <div class="file-actions">
+            <a id="terms-link" href="./pt-br/terms-of-service.md" target="_blank">Ver Online</a>
+            <a id="terms-download" href="./pt-br/terms-of-service.md" download>Baixar</a>
+        </div>
+    </div>
+
+    <div class="doc-box">
+        <h2>📄 <span id="privacy-text">Política de Privacidade</span></h2>
+        <p id="privacy-desc">Como protegemos seus dados:</p>
+        <div class="file-actions">
+            <a id="privacy-link" href="./pt-br/privacy-policy.md" target="_blank">Ver Online</a>
+            <a id="privacy-download" href="./pt-br/privacy-policy.md" download>Baixar</a>
+        </div>
+    </div>
+
+    <p style="margin-top: 30px;"><strong id="help-text">Dúvidas?</strong> Envie um e-mail para <a href="mailto:apps@fipi.solutions">apps@fipi.solutions</a></p>
+
+    <script>
+        const translations = {
+            'pt-br': {
+                title: 'QR Organizer - Documentos',
+                aboutApp: 'Sobre o Aplicativo',
+                aboutAppDesc: 'Funcionalidades e benefícios:',
+                deleteAccount: 'Como Excluir Sua Conta',
+                deleteAccountDesc: 'Passo a passo completo:',
+                terms: 'Termos de Uso',
+                termsDesc: 'Regras de utilização do app:',
+                privacy: 'Política de Privacidade',
+                privacyDesc: 'Como protegemos seus dados:',
+                help: 'Dúvidas?',
+                view: 'Ver Online',
+                download: 'Baixar'
+            },
+            'en': {
+                title: 'QR Organizer - Documents',
+                aboutApp: 'About the App',
+                aboutAppDesc: 'Features and benefits:',
+                deleteAccount: 'How to Delete Your Account',
+                deleteAccountDesc: 'Complete step by step:',
+                terms: 'Terms of Service',
+                termsDesc: 'App usage rules:',
+                privacy: 'Privacy Policy',
+                privacyDesc: 'How we protect your data:',
+                help: 'Questions?',
+                view: 'View Online',
+                download: 'Download'
+            }
+        };
+
+        function updateLinks() {
+            const language = document.getElementById('language').value;
+            const langData = translations[language];
+            
+            // Update all texts
+            document.getElementById('title').textContent = langData.title;
+            document.getElementById('about-app-text').textContent = langData.aboutApp;
+            document.getElementById('about-app-desc').textContent = langData.aboutAppDesc;
+            document.getElementById('delete-account-text').textContent = langData.deleteAccount;
+            document.getElementById('delete-account-desc').textContent = langData.deleteAccountDesc;
+            document.getElementById('terms-text').textContent = langData.terms;
+            document.getElementById('terms-desc').textContent = langData.termsDesc;
+            document.getElementById('privacy-text').textContent = langData.privacy;
+            document.getElementById('privacy-desc').textContent = langData.privacyDesc;
+            document.getElementById('help-text').textContent = langData.help;
+            
+            // Update all links
+            const docs = ['app-description', 'delete-account', 'terms-of-service', 'privacy-policy'];
+            docs.forEach(doc => {
+                const linkElem = document.getElementById(`${doc}-link`);
+                const downloadElem = document.getElementById(`${doc}-download`);
+                
+                linkElem.href = `./${language}/${doc}.md`;
+                downloadElem.href = `./${language}/${doc}.md`;
+                linkElem.textContent = langData.view;
+                downloadElem.textContent = langData.download;
+            });
+        }
+
+        // Initialize with default language
+        updateLinks();
+
+        // Optional: Detect browser language
+        const userLang = navigator.language.split('-')[0];
+        if (userLang === 'pt' || userLang === 'en') {
+            document.getElementById('language').value = userLang === 'pt' ? 'pt-br' : 'en';
+            updateLinks();
+        }
+    </script>
+</body>
+</html>
