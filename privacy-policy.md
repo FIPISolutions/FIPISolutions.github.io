@@ -1,0 +1,66 @@
+POLÍTICA DE PRIVACIDADE DO QR ORGANIZER
+Última atualização: 03/07/2025
+
+1. INFORMAÇÕES COLETADAS
+
+1.1 Dados fornecidos voluntariamente:
+- E-mail e senha: Para autenticação via Firebase Authentication
+- Imagens de itens (opcional): Armazenadas no Firebase Storage
+
+1.2 Dados coletados automaticamente:
+- Advertising ID (versão gratuita): Para anúncios personalizados
+- Dados técnicos: Logs de desempenho (Firebase Analytics)
+
+1.3 Dados NÃO coletados:
+- Localização, contatos ou informações de pagamento
+
+
+2. FINALIDADE DOS DADOS
+
+2.1 Uso principal:
+- E-mail: Login e recuperação de conta
+- Imagens: Organização de objetos pessoais
+- Advertising ID: Exibição de anúncios (versão free)
+
+2.2 Restrições:
+- Proibido conteúdo íntimo/violento
+- Violações acarretam exclusão da conta
+
+
+3. ARMAZENAMENTO E SEGURANÇA
+
+3.1 Serviços utilizados:
+- Firebase Authentication (Google)
+- Firebase Storage (Google)
+
+3.2 Proteção:
+- Criptografia padrão
+- Acesso restrito ao usuário e convidados
+
+
+4. DIREITOS DO USUÁRIO
+
+4.1 Controle sobre dados:
+- Edição/remoção de imagens
+- Exclusão total da conta, consulte: https://FIPISolutions.github.io
+
+
+4.2 Denúncias:
+- Botão no app ou e-mail: apps@fipi.solutions
+- Prazo para análise: 7 dias úteis
+
+
+5. ALTERAÇÕES
+
+5.1 Notificação:
+- Via e-mail ou no aplicativo
+- Data efetiva no topo do documento
+
+
+6. CONTATO
+
+Dúvidas ou solicitações:
+- E-mail: apps@fipi.solutions
+
+
+Consulte nossos Termos de Uso, Descrição completa do aplicativo e Como excluir sua conta em: https://FIPISolutions.github.io
