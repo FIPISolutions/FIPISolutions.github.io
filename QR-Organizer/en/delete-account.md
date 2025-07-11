@@ -1,14 +1,19 @@
 How to delete your account in QR Organizer:
 
 1. THROUGH THE APP (recommended):
-- Open the QR Organizer app
-- Go to "Settings" > "My Account"
-- Tap "Delete Account" and confirm your password
+
+* Open the QR Organizer app
+* Go to "Settings" > "My Account"
+* Tap "Delete My Account" and confirm your password. This will permanently remove all saved data on the account.
+
+
 
 2. VIA EMAIL (alternative):
-Send an email to apps@fipi.solutions with:
-- Subject: "Account Deletion Request"
-- Body: Your registered email address
-We will respond within 72 hours
+   Send an email to apps@fipi.solutions with:
+
+* Subject: "Account Deletion Request"
+* Body: Your registered email address
+  We will respond within 72 hours
 
 Check our Terms of Service, Privacy Policy and full App Description at: https://FIPISolutions.github.io
+
