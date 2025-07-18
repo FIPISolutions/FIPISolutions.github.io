@@ -104,6 +104,15 @@
     </div>
 
     <h1 id="title">QR Organizer - Documentos</h1>
+
+    <div class="doc-box">
+        <h2><span id="subscription-plans-icon">💳</span> <span id="subscription-plans-text">Planos Para Assinatura</span></h2>
+        <p id="subscription-plans-desc">Confira os valores:</p>
+        <div class="file-actions">
+            <a id="subscription-plans-link" href="./pt-br/subscription-plans.md" target="_blank">Ver Online</a>
+            <a id="subscription-plans-download" href="./pt-br/subscription-plans.md" download>Baixar</a>
+        </div>
+    </div>
     
     <div class="doc-box">
         <h2><span id="about-app-icon">📱</span> <span id="about-app-text">Sobre o Aplicativo</span></h2>
@@ -115,11 +124,11 @@
     </div>
 
     <div class="doc-box">
-        <h2><span id="howToUse-icon">📖</span> <span id="howToUse-text">Como usar?</span></h2>
-        <p id="howToUse-desc">Guia completo de funções:</p>
+        <h2><span id="how-To-Use-icon">📖</span> <span id="how-To-Use-text">Como usar?</span></h2>
+        <p id="how-To-Use-desc">Guia completo de funções:</p>
         <div class="file-actions">
-            <a id="howToUse-link" href="./pt-br/subscription-plans-ptbr.md" target="_blank">Ver Online</a>
-            <a id="howToUse-download" href="./pt-br/subscription-plans-ptbr.md" download>Baixar</a>
+            <a id="how-To-Use-link" href="./pt-br/subscription-plans.md" target="_blank">Ver Online</a>
+            <a id="how-To-Use-download" href="./pt-br/subscription-plans.md" download>Baixar</a>
         </div>
     </div>
 
@@ -158,12 +167,15 @@
         'pt-br': {
             title: 'QR Organizer - Documentos',
             languageLabel: 'Idioma/Language:',
+            subscriptionPlansIcon: '💳',
+            subscriptionPlansText: 'Planos Para Assinatura',
+            subscriptionPlansDesc: 'Confira os valores:',
             aboutAppIcon: '📱',
             aboutAppText: 'Sobre o Aplicativo',
             aboutAppDesc: 'Funcionalidades e benefícios:',
-            howToUseIcon: '📖',
-            howToUseText: 'Como usar?',
-            howToUseDesc: 'Guia completo de funções:',
+            how-To-UseIcon: '📖',
+            how-To-UseText: 'Como usar?',
+            how-To-UseDesc: 'Guia completo de funções:',
             deleteAccountIcon: '🗑️',
             deleteAccountText: 'Como Excluir Sua Conta',
             deleteAccountDesc: 'Passo a passo completo:',
@@ -180,9 +192,15 @@
         'en': {
             title: 'QR Organizer - Documents',
             languageLabel: 'Language/Idioma:',
+            subscriptionPlansIcon: '💳',
+            subscriptionPlansText: 'Subscription Plans',
+            subscriptionPlansDesc: 'Check the values:',
             aboutAppIcon: '📱',
             aboutAppText: 'About the App',
             aboutAppDesc: 'Features and benefits:',
+            howToUseIcon: '📖',
+            howToUseText: 'how to use?',
+            howToUseDesc: 'Complete Function Guide:',
             deleteAccountIcon: '🗑️',
             deleteAccountText: 'How to Delete Your Account',
             deleteAccountDesc: 'Complete step by step:',
@@ -207,9 +225,17 @@
         document.getElementById('language-label').textContent = langData.languageLabel;
 
         // Atualiza blocos
+        document.getElementById('subscription-plans-icon').textContent = langData.subscriptionPlansIcon;
+        document.getElementById('subscription-plans-text').textContent = langData.subscriptionPlansText;
+        document.getElementById('subscription-plans-desc').textContent = langData.subscriptionPlansDesc;
+
         document.getElementById('about-app-icon').textContent = langData.aboutAppIcon;
         document.getElementById('about-app-text').textContent = langData.aboutAppText;
         document.getElementById('about-app-desc').textContent = langData.aboutAppDesc;
+
+        document.getElementById('how-To-Use-icon').textContent = langData.howToUseIcon;
+        document.getElementById('how-To-Use-text').textContent = langData.howToUseText;
+        document.getElementById('how-To-Use-desc').textContent = langData.howToUseDesc;
 
         document.getElementById('delete-account-icon').textContent = langData.deleteAccountIcon;
         document.getElementById('delete-account-text').textContent = langData.deleteAccountText;
@@ -228,6 +254,8 @@
         // Atualiza links e botões
         const docs = [
             { prefix: 'app-description', file: 'app-description.md' },
+            { prefix: 'app-description', file: 'app-description.md' },
+            { prefix: 'how-To-Use', file: 'app-description.md' },
             { prefix: 'delete-account', file: 'delete-account.md' },
             { prefix: 'terms', file: 'terms-of-service.md' },
             { prefix: 'privacy', file: 'privacy-policy.md' }
