@@ -9,26 +9,26 @@
 
 
 
-
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 # Plano PREMIUM
 
 
 
-* ###### Máximo de 25 listas
-* ###### Listas com até 30 itens cada
-* ###### Você poderá conceder acesso às suas listas
-* ###### Você poderá receber permissão de acesso às listas de outros usuários
+* Máximo de 25 listas
+* Listas com até 30 itens cada
+* Você poderá conceder acesso às suas listas
+* Você poderá receber permissão de acesso às listas de outros usuários
 
 
 
-
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 # Plano PREMIUM PLUS
 
 
 
-* ###### Máximo de 80 listas
-* ###### Listas com até 50 itens cada
-* ###### Você poderá conceder acesso às suas listas
-* ###### Você poderá receber permissão de acesso às listas de outros usuários
+* Máximo de 80 listas
+* Listas com até 50 itens cada
+* Você poderá conceder acesso às suas listas
+* Você poderá receber permissão de acesso às listas de outros usuários
