@@ -2,18 +2,14 @@
 
 
 
-
-
 * Maximum of 3 lists
 * Lists with up to 7 items each
 * You cannot grant access to your lists
 * You will not be granted access to other users' lists
 
-
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 # PREMIUM Plan
-
-
 
 
 
@@ -24,7 +20,7 @@
 
 
 
-
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 # PREMIUM PLUS Plan
 
