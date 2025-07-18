@@ -124,11 +124,11 @@
     </div>
 
     <div class="doc-box">
-        <h2><span id="how-To-Use-icon">📖</span> <span id="how-To-Use-text">Como usar?</span></h2>
-        <p id="how-To-Use-desc">Guia completo de funções:</p>
+        <h2><span id="howToUse-icon">📖</span> <span id="howToUse-text">Como usar?</span></h2>
+        <p id="howToUse-desc">Guia completo de funções:</p>
         <div class="file-actions">
-            <a id="how-To-Use-link" href="./pt-br/subscription-plans.md" target="_blank">Ver Online</a>
-            <a id="how-To-Use-download" href="./pt-br/subscription-plans.md" download>Baixar</a>
+            <a id="howToUse-link" href="./pt-br/subscription-plans.md" target="_blank">Ver Online</a>
+            <a id="howToUse-download" href="./pt-br/subscription-plans.md" download>Baixar</a>
         </div>
     </div>
 
@@ -173,9 +173,9 @@
             aboutAppIcon: '📱',
             aboutAppText: 'Sobre o Aplicativo',
             aboutAppDesc: 'Funcionalidades e benefícios:',
-            how-To-UseIcon: '📖',
-            how-To-UseText: 'Como usar?',
-            how-To-UseDesc: 'Guia completo de funções:',
+            howToUseIcon: '📖',
+            howToUseText: 'Como usar?',
+            howToUseDesc: 'Guia completo de funções:',
             deleteAccountIcon: '🗑️',
             deleteAccountText: 'Como Excluir Sua Conta',
             deleteAccountDesc: 'Passo a passo completo:',
@@ -233,9 +233,9 @@
         document.getElementById('about-app-text').textContent = langData.aboutAppText;
         document.getElementById('about-app-desc').textContent = langData.aboutAppDesc;
 
-        document.getElementById('how-To-Use-icon').textContent = langData.howToUseIcon;
-        document.getElementById('how-To-Use-text').textContent = langData.howToUseText;
-        document.getElementById('how-To-Use-desc').textContent = langData.howToUseDesc;
+        document.getElementById('howToUse-icon').textContent = langData.howToUseIcon;
+        document.getElementById('howToUse-text').textContent = langData.howToUseText;
+        document.getElementById('howToUse-desc').textContent = langData.howToUseDesc;
 
         document.getElementById('delete-account-icon').textContent = langData.deleteAccountIcon;
         document.getElementById('delete-account-text').textContent = langData.deleteAccountText;
@@ -253,9 +253,9 @@
 
         // Atualiza links e botões
         const docs = [
+            { prefix: 'subscription-plans', file: 'subscription-plans.md' },
             { prefix: 'app-description', file: 'app-description.md' },
-            { prefix: 'app-description', file: 'app-description.md' },
-            { prefix: 'how-To-Use', file: 'app-description.md' },
+            { prefix: 'howToUse', file: 'app-description.md' },
             { prefix: 'delete-account', file: 'delete-account.md' },
             { prefix: 'terms', file: 'terms-of-service.md' },
             { prefix: 'privacy', file: 'privacy-policy.md' }
