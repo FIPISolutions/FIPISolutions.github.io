@@ -1,7 +1,5 @@
 # Plano FREEE
 
-
-
 * Máximo de 3 listas
 * Listas com até 7 itens cada
 * Não é permitido conceder acesso às suas listas
@@ -9,11 +7,9 @@
 
 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+---
 
 # Plano PREMIUM
-
-
 
 * Máximo de 25 listas
 * Listas com até 30 itens cada
@@ -22,11 +18,9 @@
 
 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+---
 
 # Plano PREMIUM PLUS
-
-
 
 * Máximo de 80 listas
 * Listas com até 50 itens cada
