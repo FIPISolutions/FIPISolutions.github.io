@@ -5,9 +5,7 @@
 * Não é permitido conceder acesso às suas listas
 * Não receberá permissão de acesso às listas de outros usuários
 
-
-
----
+- - -
 
 # Plano PREMIUM
 
@@ -16,9 +14,7 @@
 * Você poderá conceder acesso às suas listas
 * Você poderá receber permissão de acesso às listas de outros usuários
 
-
-
----
+- - -
 
 # Plano PREMIUM PLUS
 
