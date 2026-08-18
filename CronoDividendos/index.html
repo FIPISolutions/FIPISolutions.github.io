@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CronoDividendos - Documentos</title>
+    <style>
+        :root {
+            --primary-color: #4A0E17; /* Vinho Oficial */
+            --secondary-color: #1E1E1E; /* Fundo do Bloco Grafite */
+            --background-color: #121212; /* Fundo Geral Escuro */
+            --text-color: #D1D5DB; /* Texto Cinza Claro */
+            --hover-color: #6B1D2F; /* Vinho de Destaque */
+        }
+        
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        h1 { 
+            color: #FFFFFF; 
+            margin-top: 0;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+        
+        .language-selector { 
+            margin: 0 0 25px 0; 
+            padding: 12px 15px; 
+            background: #251618; /* Sutil Vinho de Fundo */
+            border-radius: 8px;
+            display: inline-block;
+            border: 1px solid var(--primary-color);
+        }
+
+        .language-selector label, .language-selector select {
+            color: #FFFFFF;
+        }
+
+        .language-selector select {
+            background-color: var(--secondary-color);
+            border: 1px solid #374151;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        
+        .doc-box { 
+            background: var(--secondary-color); 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        
+        .doc-box:hover {
+            transform: translateY(-2px);
+        }
+        
+        .doc-box h2 {
+            margin-top: 0;
+            color: #FFFFFF;
+        }
+        
+        .file-actions {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .file-actions a {
+            display: inline-block;
+            padding: 8px 15px;
+            background: var(--primary-color);
+            color: white !important;
+            border-radius: 5px;
+            font-size: 14px;
+            text-decoration: none !important;
+            transition: background 0.2s ease;
+            font-weight: bold;
+        }
+        
+        .file-actions a:hover {
+            background: var(--hover-color);
+        }
+        
+        #help-text {
+            font-size: 1.1em;
+        }
+
+        a {
+            color: #E5E7EB;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            
+            .doc-box {
+                padding: 15px;
+            }
+            
+            .file-actions {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <label for="language"><strong id="language-label">Idioma/Language:</strong></label>
+        <select id="language" onchange="updateLinks()">
+            <option value="pt-br">Português</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <h1 id="title">CronoDividendos - Documentos</h1>
+
+    <!-- 1. SOBRE O APP -->
+    <div class="doc-box">
+        <h2><span id="about-app-icon">📱</span> <span id="about-app-text">Sobre o Aplicativo</span></h2>
+        <p id="about-app-desc">Funcionalidades e benefícios:</p>
+        <div class="file-actions">
+            <a id="app-description-link" href="./pt-br/app-description.md" target="_blank">Ver Online</a>
+            <a id="app-description-download" href="./pt-br/app-description.md" download>Baixar</a>
+        </div>
+    </div>
+
+    <!-- 2. TERMOS DE USO -->
+    <div class="doc-box">
+        <h2><span id="terms-icon">📝</span> <span id="terms-text">Termos de Uso</span></h2>
+        <p id="terms-desc">Regras de utilização do app:</p>
+        <div class="file-actions">
+            <a id="terms-link" href="./pt-br/terms-of-service.md" target="_blank">Ver Online</a>
+            <a id="terms-download" href="./pt-br/terms-of-service.md" download>Baixar</a>
+        </div>
+    </div>
+
+    <!-- 3. POLITICA DE PRIVACIDADE -->
+    <div class="doc-box">
+        <h2><span id="privacy-icon">📄</span> <span id="privacy-text">Política de Privacidade</span></h2>
+        <p id="privacy-desc">Como protegemos seus dados:</p>
+        <div class="file-actions">
+            <a id="privacy-link" href="./pt-br/privacy-policy.md" target="_blank">Ver Online</a>
+            <a id="privacy-download" href="./pt-br/privacy-policy.md" download>Baixar</a>
+        </div>
+    </div>
+    
+    <p style="margin-top: 30px;"><strong id="help-text">Dúvidas?</strong> Envie um e-mail para <a href="mailto:apps@fipi.solutions" id="email-link" style="color: #FFFFFF;">apps@fipi.solutions</a></p>
+
+    <script>
+      const translations = {
+        'pt-br': {
+            title: 'CronoDividendos - Documentos',
+            languageLabel: 'Idioma/Language:',
+            aboutAppIcon: '📱',
+            aboutAppText: 'Sobre o Aplicativo',
+            aboutAppDesc: 'Funcionalidades e benefícios:',
+            termsIcon: '📝',
+            termsText: 'Termos de Uso',
+            termsDesc: 'Regras de utilização do app:',
+            privacyIcon: '📄',
+            privacyText: 'Política de Privacidade',
+            privacyDesc: 'Como protegemos seus dados:',
+            help: 'Dúvidas?',
+            view: 'Ver Online',
+            download: 'Baixar'
+        },
+        'en': {
+            title: 'CronoDividendos - Documents',
+            languageLabel: 'Language/Idioma:',
+            aboutAppIcon: '📱',
+            aboutAppText: 'About the App',
+            aboutAppDesc: 'Features and benefits:',
+            termsIcon: '📝',
+            termsText: 'Terms of Service',
+            termsDesc: 'App usage rules:',
+            privacyIcon: '📄',
+            privacyText: 'Privacy Policy',
+            privacyDesc: 'How we protect your data:',
+            help: 'Questions?',
+            view: 'View Online',
+            download: 'Download'
+        }
+    };
+
+    function updateLinks() {
+        const language = document.getElementById('language').value;
+        const langData = translations[language];
+
+        // Atualiza textos estruturais
+        document.getElementById('title').textContent = langData.title;
+        document.getElementById('language-label').textContent = langData.languageLabel;
+
+        // Atualiza blocos de conteúdo
+        document.getElementById('about-app-icon').textContent = langData.aboutAppIcon;
+        document.getElementById('about-app-text').textContent = langData.aboutAppText;
+        document.getElementById('about-app-desc').textContent = langData.aboutAppDesc;
+
+        document.getElementById('terms-icon').textContent = langData.termsIcon;
+        document.getElementById('terms-text').textContent = langData.termsText;
+        document.getElementById('terms-desc').textContent = langData.termsDesc;
+
+        document.getElementById('privacy-icon').textContent = langData.privacyIcon;
+        document.getElementById('privacy-text').textContent = langData.privacyText;
+        document.getElementById('privacy-desc').textContent = langData.privacyDesc;
+
+        document.getElementById('help-text').textContent = langData.help;
+
+        // Lista mapeada com os 3 documentos essenciais
+        const docs = [
+            { prefix: 'app-description', file: 'app-description.md' },
+            { prefix: 'terms', file: 'terms-of-service.md' },
+            { prefix: 'privacy', file: 'privacy-policy.md' }
+        ];
+
+        docs.forEach(doc => {
+            const linkElem = document.getElementById(`${doc.prefix}-link`);
+            const downloadElem = document.getElementById(`${doc.prefix}-download`);
+            
+            if (linkElem && downloadElem) {
+                linkElem.href = `./${language}/${doc.file}`;
+                downloadElem.href = `./${language}/${doc.file}`;
+                linkElem.textContent = langData.view;
+                downloadElem.textContent = langData.download;
+            }
+        });
+
+        // Atualiza lang do HTML
+        document.documentElement.lang = language === 'pt-br' ? 'pt-BR' : 'en';
+    }
+
+    // Inicializa detectando o idioma padrão do sistema operacional
+    const userLang = navigator.language.split('-')[0];
+    document.getElementById('language').value = 
+        (userLang === 'pt' || userLang === 'en') ? 
+        (userLang === 'pt' ? 'pt-br' : 'en') : 'pt-br';
+
+    updateLinks();
+</script>
+
+</body>
+</html>
