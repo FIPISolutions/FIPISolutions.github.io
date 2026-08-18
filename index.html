@@ -157,6 +157,13 @@
                 <p class="app-description" id="app1-desc">Organize. Escaneie. Encontre! Tudo sob controle com QR Organizer.</p>
                 <a href="/QR-Organizer/" class="app-link" id="app1-link">Acessar Documentos →</a>
             </div>
+
+                        <!-- Card do CronoDividendos -->
+            <div class="app-card" style="border-left-color: #4A0E17;">
+                <h2>📊 <span id="app2-title">CronoDividendos</span></h2>
+                <p class="app-description" id="app2-desc">Planeje e simule sua carteira previdenciária por ciclos inteligentes.</p>
+                <a href="/CronoDividendos/" class="app-link" id="app2-link" style="background-color: #4A0E17;">Acessar Documentos →</a>
+            </div>
             
             <!-- Template para novos aplicativos (copie e adapte) -->
             
@@ -170,6 +177,7 @@
 
     <script>
         // Traduções
+                // Traduções
         const translations = {
             'pt-br': {
                 title: "FIPI Solutions",
@@ -177,6 +185,9 @@
                 app1Title: "QR Organizer",
                 app1Desc: "Organize. Escaneie. Encontre! Tudo sob controle com QR Organizer.",
                 app1Link: "Acessar Documentos →",
+                app2Title: "CronoDividendos",
+                app2Desc: "Planeje e simule sua carteira previdenciária por ciclos inteligentes.",
+                app2Link: "Acessar Documentos →",
                 footer: "FIPI Solutions. Todos os direitos reservados.",
                 help: "Dúvidas?"
             },
@@ -186,12 +197,16 @@
                 app1Title: "QR Organizer",
                 app1Desc: "Organize. Scan. Find! Everything under control with QR Organizer.",
                 app1Link: "Access Documents →",
+                app2Title: "CronoDividendos",
+                app2Desc: "Plan and simulate your pension portfolio through smart cycles.",
+                app2Link: "Access Documents →",
                 footer: "FIPI Solutions. All rights reserved.",
                 help: "Questions?"
             }
         };
 
-        // Função para atualizar o idioma
+
+                // Função para atualizar o idioma
         function updateLanguage() {
             const language = document.getElementById('language').value;
             const langData = translations[language];
@@ -199,15 +214,25 @@
             // Atualiza todos os textos
             document.getElementById('main-title').textContent = langData.title;
             document.getElementById('main-subtitle').textContent = langData.subtitle;
+            
+            // App 1 (QR Organizer)
             document.getElementById('app1-title').textContent = langData.app1Title;
             document.getElementById('app1-desc').textContent = langData.app1Desc;
             document.getElementById('app1-link').textContent = langData.app1Link;
+            
+            // App 2 (CronoDividendos)
+            document.getElementById('app2-title').textContent = langData.app2Title;
+            document.getElementById('app2-desc').textContent = langData.app2Desc;
+            document.getElementById('app2-link').textContent = langData.app2Link;
+            
+            // Rodapé
             document.getElementById('footer-text').textContent = langData.footer;
             document.getElementById('help-text').innerHTML = `${langData.help} <a href="mailto:apps@fipi.solutions" class="footer-link">apps@fipi.solutions</a>`;
             
             // Atualiza o atributo lang do HTML
             document.documentElement.lang = language === 'pt-br' ? 'pt-BR' : 'en';
         }
+
 
         // Detecção automática do idioma do navegador
         function detectLanguage() {
